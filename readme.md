@@ -21,9 +21,12 @@ You'll create 2 pages and we'll give you the design for the first one, so you sh
 - Add state management to your app.
 
 ### Page 1: Home
-Accordingly to the following image:
-![Logo](./assets/page1.png)
-- your layout will be responsive having a single breakpoint of 768 pixels (mobile and desktop)
+Accordingly to the following images:
+|Desktop   | Mobile   |
+|---|---|
+|![Page desktop](./assets/page1-desktop.png)   |![Page mobile](./assets/page1-mobile.png)   |
+
+- your layout will be responsive having a single breakpoint of 1024 pixels (mobile and desktop)
 - on desktop:
   - the content has a maximum width of 1024 pixels and is centralized
   - the menu is on the left and scrolls together with the rest of the page
