@@ -21,10 +21,14 @@ You'll create 2 pages and we'll give you the design for the first one, so you sh
 - Add state management to your app.
 
 ### Page 1: Home
-Accordingly to the following images:
+According to the following images:
 |Desktop   | Mobile   |
 |---|---|
-|![Page desktop](./assets/page1-desktop.png)   |![Page mobile](./assets/page1-mobile.png)   |
+|![Page desktop](./assets/mockups/page1-desktop.png)   |![Page mobile](./assets/mockups/page1-mobile.png)   |
+
+|Guidelines   |
+|---|
+|![Guidelines](./assets/mockups/guidelines.png)   |
 
 - your layout will be responsive having a single breakpoint of 1024 pixels (mobile and desktop)
 - on desktop:
