@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS";
+  font-weight: 200;
+  color: $text-color;
+  overflow-y: scroll;
+}
+
+.grid-layout {
+  margin: 0px 20px;
+  max-height: calc(100vh - 55px); // 55px menu
+  overflow: scroll;
+
+  .logo {
+    margin: 20px 0px;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+
+    position: relative;
+    overflow: inherit;
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 30px;
+
+    > div {
+      padding: 20px;
+    }
+
+    .logo {
+      position: fixed;
+      width: calc(
+        300px - 40px
+      ); // 40px = .grid-layout -> margin left & right (20px)
+    }
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+// Animations
+@keyframes bounce-in {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Global Page Animation
+.route-enter-from {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.route-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.route-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+// Friend Details Animation
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.slide-right-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.slide-right-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.slide-left-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.slide-left-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+// Fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Shake
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-10deg);
+  }
+}
