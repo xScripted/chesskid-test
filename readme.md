@@ -10,7 +10,7 @@ To run the client: `npm run serve`
 - **Vue-router**
 - **Jest**
 - **Sass**
-- **Icons** Free svg icons from: https://heroicons.dev/?query=ch
+- **Icons** Free svg icons from: https://heroicons.dev
 
 ## Features
 
